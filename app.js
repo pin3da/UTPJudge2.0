@@ -3,8 +3,11 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var engine  = require('ejs-locals');
+var bodyParser  = require('body-parser');
+var engine      = require('ejs-locals');
+var env         = process.env.NODE_ENV || 'development';
+var config      = require('./config/' + env + '.js');
+var resourceful = require('resourceful');
 
 var app = express();
 
@@ -55,5 +58,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
+resourceful.use('couchdb', config);
 
 module.exports = app;
