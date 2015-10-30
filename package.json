@@ -13,5 +13,23 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "description": "UTP Judge 2.0",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pin3da/UTPJudge2.0.git"
+  },
+  "keywords": [
+    "UTP",
+    "judge",
+    "programming",
+    "contest"
+  ],
+  "author": "",
+  "license": "MPLv2",
+  "bugs": {
+    "url": "https://github.com/pin3da/UTPJudge2.0/issues"
+  },
+  "homepage": "https://github.com/pin3da/UTPJudge2.0"
 }
